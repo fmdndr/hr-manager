@@ -1,12 +1,17 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: hr-config-server
   cloud:
     config:
+      enabled: false
       server:
+        bootstrap: true
         git:
-          uri: 'C:/hr-management/hr-config'
-          default-label: main
+          uri: 'file:///C:\\hr-management\\hr-config'
+          defaultLabel: master
+          clone-on-start: true
+          refresh-rate: 3
 
-server:
-  port: 8888
