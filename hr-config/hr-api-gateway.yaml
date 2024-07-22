@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: hr-api-gateway
+server:
+  port: 7777

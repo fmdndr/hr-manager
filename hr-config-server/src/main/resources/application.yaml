@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: 'C:/hr-management/hr-config'
-          default-label: master
+          default-label: main
 
 server:
   port: 8888
